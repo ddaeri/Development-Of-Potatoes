@@ -8,15 +8,15 @@
  var pw2 = document.querySelector('#user_pw_check');
  
  var error = document.querySelectorAll('.error');
- var message = document.querySelectorAll('.message');
+ var message = document.querySelector('.message');
  
  // 이벤트 핸들러 연결
  id.addEventListener("focusout", checkId);
  pw1.addEventListener("focusout", checkPw);
  pw2.addEventListener("focusout", comparePw);
  message.addEventListener("focus", pwMessage);
-/*
- message.addEventListener("focus", function() {
+
+ /*message.addEventListener("focus", function() {
 	this.value = "영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자";
 });*/
 
@@ -33,7 +33,7 @@
 
   // 비밀번호 메세지
  function pwMessage() {
-	this.value = "영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자";
+	message[0].innerHTML = "영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자";
 }
 
   // 비밀번호 확인
