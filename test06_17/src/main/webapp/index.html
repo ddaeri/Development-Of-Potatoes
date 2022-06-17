@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>KH test UI 구현</title>
+	<link rel="stylesheet" type="text/css" href="./static/css/sample01.css">
+</head>
+<body>
+	<section class="content-center w580">
+		<form action="" method="post">
+			<div class="form">
+				<div class="join-control">
+					<label class="title">아이디</label>
+					<input type="text" id="user_id" class="user_input" required><br>
+					<span class="error"></span>
+				</div>
+				<div class="join-control">
+					<label class="title">패스워드</label>
+					<input type="text" id="user_pw" class="user_input" required><br>
+					<span class="message"></span>
+					<span class="error"></span>
+				</div>
+				<div class="join-control">
+					<label class="title">패스워드 확인</label>
+					<input type="text" id="user_pw_check" class="user_input" required><br>
+					<span class="error"></span>
+				</div>
+				<div class="join-control">
+					<label class="title">이메일</label>
+					<input type="text" id="user_email01" class="email_input">@
+					<input type="text" id="user_email02" class="email_input">
+				</div>
+				<div class="join-control">
+					<label class="title">주소</label>
+					<input type="text" id="user_address" class="user_input"><br>
+				</div>
+				<div class="join-control">
+					<label class="title">&nbsp</label>
+					<input type="text" id="user_address" class="user_input">
+				</div>
+				<div class="join-control-btn">
+					<button class="btn btn-block btn-green" type="button">가 입</button>
+				</div>
+			</div>
+		</form>
+	</section>
+	<script type="text/javascript" src="./static/js/sample01.js"></script>
+</body>
+</html>
